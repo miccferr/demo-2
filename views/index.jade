@@ -1,0 +1,37 @@
+html
+    head
+        link(rel='stylesheet', href='/stylesheets/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', href='http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css')
+        link(rel='stylesheet', href='/vendor/geocoder/Control.OSMGeocoder.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        
+        
+    body
+        .jumbotron
+            h1= title
+            p OpenStreetMap statistics & Data Visualization tool
+            p v. 0.0.1
+            .btn-group.btn-group-lg
+                form(id="query-osm", action="/getOSMData", method="post")
+                    input(type="hidden", name="SWlat", id="SWlat")
+                    input(type="hidden", name="SWlng", id="SWlng")
+                    input(type="hidden", name="NElat", id="NElat")
+                    input(type="hidden", name="NElng", id="NElng")
+                    div.input
+                        span.label Key
+                        input(type="text", name="key")
+                    div.input
+                        span.label Value
+                        input(type="text", name="value")                    
+                        
+                    div.actions
+                        input(type="button", value="Fetch OSM data").btn.btn-warning.getOSMData
+
+        #map(style='height: 500px;')
+
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='/public/stylesheets/bootstrap/dist/js/bootstrap.min.js')
+
+        script(src='http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js')
+        script(src='/vendor/geocoder/Control.OSMGeocoder.js')
+        script(src='/javascripts/my-script.js')

@@ -1,0 +1,410 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API",
+  "osm3s": {
+    "timestamp_osm_base": "2015-07-22T14:29:01Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 306395720,
+  "lat": 51.5180196,
+  "lon": -0.0860778,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 538090940,
+  "lat": 51.4960846,
+  "lon": -0.1205960,
+  "tags": {
+    "amenity": "drinking_water",
+    "disused": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 564862641,
+  "lat": 51.4853549,
+  "lon": -0.1342783,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/981/original/uk-greater-london-london-westminster-pimlico-gardens-grosvenor-road-outdoor-fountain.png",
+    "maintenance": "ok",
+    "name": "Pimlico Gardens, Grosvenor Road",
+    "source": "osmsync:findafountain",
+    "source:pkey": "3034"
+  }
+},
+{
+  "type": "node",
+  "id": 690275261,
+  "lat": 51.5074230,
+  "lon": -0.1094980,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1401459402,
+  "lat": 51.5101467,
+  "lon": -0.0859153,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1420971653,
+  "lat": 51.5035944,
+  "lon": -0.1350987,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407619,
+  "lat": 51.5238461,
+  "lon": -0.1579651,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/862/original/uk-greater-london-london-westminster-baker-street-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Baker Street",
+    "source": "osmsync:findafountain",
+    "source:pkey": "896"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407633,
+  "lat": 51.5130000,
+  "lon": -0.0984049,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "First fully certified drinking fountain in London for 30 years. Switched on 21st of May 2010",
+    "image": "http://findafountain.org/system/876/original/uk-greater-london-london-carter-lane-gardens-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Carter Lane Gardens",
+    "source": "osmsync:findafountain",
+    "source:pkey": "1145"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407648,
+  "lat": 51.5062000,
+  "lon": -0.1051750,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "This fountain in the churchyard in Columbo Street has been neglected in recent years, although still functions well  http://www.christchurchsouthwark.org.uk/history.html",
+    "image": "http://findafountain.org/system/59/original/uk-greater-london-london-southwark-christchurch-southwark-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Christchurch, Southwark",
+    "source": "osmsync:findafountain",
+    "source:pkey": "47"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407667,
+  "lat": 51.5222000,
+  "lon": -0.0933300,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/32/original/uk-greater-london-london-corporation-of-london-fortune-sqaure-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Fortune Sqaure",
+    "source": "osmsync:findafountain",
+    "source:pkey": "20"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407676,
+  "lat": 51.5036000,
+  "lon": -0.1467280,
+  "tags": {
+    "amenity": "drinking_water",
+    "maintenance": "ok",
+    "name": "Green Park",
+    "source": "osmsync:findafountain",
+    "source:pkey": "897"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407677,
+  "lat": 51.5065000,
+  "lon": -0.1428650,
+  "tags": {
+    "FIXME": "This place isn't accessible any more. Where is the fountain now?",
+    "amenity": "drinking_water",
+    "description": "Outside Green Park station work to  relocate this statue and fountain is almost complete. “Diana of the Treetops” by Estcourt J. Clack was originally unveiled in 1954.",
+    "image": "http://findafountain.org/system/976/original/uk-greater-london-london-corporation-of-london-green-park-5-outdoor-fountain.tiff",
+    "maintenance": "ok",
+    "name": "Green Park 5",
+    "source": "osmsync:findafountain",
+    "source:pkey": "3025"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407729,
+  "lat": 51.5081000,
+  "lon": -0.1565660,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "Found at the Eastern side of Hyde Park",
+    "image": "http://findafountain.org/system/49/original/uk-greater-london-london-kensington-chelsea-hyde-park-7-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Hyde Park 7",
+    "source": "osmsync:findafountain",
+    "source:pkey": "37"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407742,
+  "lat": 51.5119000,
+  "lon": -0.1607720,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "The Freeman Family Fountain. This is the first new London fountain for thirty years opened September 2009.",
+    "image": "http://findafountain.org/system/50/original/uk-greater-london-london-kensington-chelsea-hyde-park-8-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Hyde Park 8",
+    "source": "osmsync:findafountain",
+    "source:pkey": "38"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407769,
+  "lat": 51.4834000,
+  "lon": -0.1081680,
+  "tags": {
+    "amenity": "drinking_water",
+    "maintenance": "ok",
+    "name": "Kennington Park fountain",
+    "source": "osmsync:findafountain",
+    "source:pkey": "3017"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407795,
+  "lat": 51.5112000,
+  "lon": -0.1282360,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "This does work but is currently inaccessible due to work being completed on Leicester Square.",
+    "image": "http://findafountain.org/system/908/original/uk-greater-london-london-westminster-leicester-square-1-outdoor-fountain..",
+    "maintenance": "ok",
+    "name": "Leicester Square 1",
+    "source": "osmsync:findafountain",
+    "source:pkey": "2096"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407801,
+  "lat": 51.5112000,
+  "lon": -0.1281000,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "This does work but is currently inaccessible due to work being completed on Leicester Square.",
+    "image": "http://findafountain.org/system/909/original/uk-greater-london-london-westminster-leicester-square-2-outdoor-fountain.png",
+    "maintenance": "ok",
+    "name": "Leicester Square 2",
+    "source": "osmsync:findafountain",
+    "source:pkey": "2097"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407842,
+  "lat": 51.5098000,
+  "lon": -0.1501390,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/978/original/uk-greater-london-london-westminster-mount-street-gardens-outdoor-fountain.png",
+    "maintenance": "ok",
+    "name": "Mount Street Gardens",
+    "source": "osmsync:findafountain",
+    "source:pkey": "3029"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407845,
+  "lat": 51.5299000,
+  "lon": -0.1083180,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/68/original/uk-greater-london-london-islington-myddelton-square-outdoor-fountain.bmp",
+    "maintenance": "ok",
+    "name": "Myddelton Square",
+    "source": "osmsync:findafountain",
+    "source:pkey": "56"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407846,
+  "lat": 51.5272000,
+  "lon": -0.1023320,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/71/original/uk-greater-london-london-islington-northampton-square-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Northampton Square",
+    "source": "osmsync:findafountain",
+    "source:pkey": "59"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407870,
+  "lat": 51.5291000,
+  "lon": -0.1617480,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "Found at the Hanover Gate",
+    "image": "http://findafountain.org/system/77/original/uk-greater-london-london-westminster-regents-park-2-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Regents Park 2",
+    "source": "osmsync:findafountain",
+    "source:pkey": "65"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407929,
+  "lat": 51.5255776,
+  "lon": -0.1088675,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/69/original/uk-greater-london-london-islington-spa-fields-extension-1-outdoor-fountain.bmp",
+    "maintenance": "ok",
+    "name": "Spa Fields Extension 1",
+    "source": "osmsync:findafountain",
+    "source:pkey": "57"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407932,
+  "lat": 51.5257000,
+  "lon": -0.1097770,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/70/original/uk-greater-london-london-islington-spa-fields-extension-2-outdoor-fountain.bmp",
+    "maintenance": "ok",
+    "name": "Spa Fields Extension 2",
+    "source": "osmsync:findafountain",
+    "source:pkey": "58"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407938,
+  "lat": 51.5031000,
+  "lon": -0.1357630,
+  "tags": {
+    "amenity": "drinking_water",
+    "image": "http://findafountain.org/system/78/original/uk-greater-london-london-westminster-st-james-park-1-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "St James Park 1",
+    "source": "osmsync:findafountain",
+    "source:pkey": "66"
+  }
+},
+{
+  "type": "node",
+  "id": 1504407942,
+  "lat": 51.5129000,
+  "lon": -0.0975037,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "St Lawrence Jewry Memorial Fountain, designed by Architect John Robinson with bronze sculpture by artist Joseph Durham. Erected in 1866 outside St Lawrence Jewry. Now retrofitted and re-located in front of St. Paul's Cathedral.",
+    "image": "http://findafountain.org/system/875/original/uk-greater-london-london-corporation-of-london-st-lawrence-jewry-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "St Lawrence Jewry",
+    "source": "osmsync:findafountain",
+    "source:pkey": "1144",
+    "website": "http://www.stlawrencefountain.co.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 1504408026,
+  "lat": 51.5083000,
+  "lon": -0.1274800,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "Found on the Eastern Side. This renovation of this fountain cost £2,200; it was reopened in March 2010",
+    "image": "http://findafountain.org/system/167/original/uk-greater-london-london-westminster-trafalgar-square-2-outdoor-fountain.jpg",
+    "maintenance": "ok",
+    "name": "Trafalgar Square 2",
+    "source": "osmsync:findafountain",
+    "source:pkey": "155",
+    "wheelchair": "unknown"
+  }
+},
+{
+  "type": "node",
+  "id": 2305795724,
+  "lat": 51.5158594,
+  "lon": -0.1548368,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2485235238,
+  "lat": 51.4815759,
+  "lon": -0.0924217,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2485235249,
+  "lat": 51.4836897,
+  "lon": -0.0841598,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+},
+{
+  "type": "node",
+  "id": 2905822201,
+  "lat": 51.5109930,
+  "lon": -0.1348630,
+  "tags": {
+    "amenity": "drinking_water",
+    "covered": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3010889026,
+  "lat": 51.5073545,
+  "lon": -0.0762378,
+  "tags": {
+    "amenity": "drinking_water"
+  }
+}
+
+  ]
+}
