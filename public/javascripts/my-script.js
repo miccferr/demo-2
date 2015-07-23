@@ -105,12 +105,12 @@ $.post('/getData/getOSMData',data,function(res){
 
 	function filterFeature(feature, layer){
 		if (feature.properties.tags.amenities === 'biergarten'){
-			return {
-
+			return  L.marker(latlng, geojsonMarkerOptions);
+			}else{
+				return L.marker(latlng);
 			}
-		}
-		
-	};
+
+ };
 
 // 	var geojsonMarkerOptions = {
 //     radius: 8,
@@ -135,7 +135,8 @@ var geojsonMarkerOptions = L.icon({
 		onEachFeature: onEachFeature,
 		pointToLayer: function (feature, latlng) {
         return L.marker(latlng, geojsonMarkerOptions);
-    }
+    },
+    // filter : filterFeature
 	}).addTo(map);
 
 });
