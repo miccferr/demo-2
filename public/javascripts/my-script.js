@@ -9,10 +9,10 @@ var map = L.map("map",{
 // initialize
 // var layerStamen = new L.StamenTileLayer("toner");
 var layerStamen =  L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
-            id: 'examples.map-i86knfo3'
-        }).addTo(map);
+	maxZoom: 18,
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+	id: 'examples.map-i86knfo3'
+}).addTo(map);
 
 var layerOsm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -22,6 +22,8 @@ var baseLayers = {
 	layerStamen,
 	layerOsm
 };
+// define the array I'm going to fill with geojson
+var osmFeatureLayer
 
 // group control
 L.control.layers(baseLayers).addTo(map);
@@ -64,7 +66,7 @@ $('.getOSMData').on('click',function() {
 
 	var data = $('#query-osm').serializeArray();
 
-	console.log(data);
+	// console.log(data);
 	// data.push({
 	// 	SWlat: bbox._southWest.lat,
 	// 	SWlng: bbox._southWest.lng,
@@ -72,11 +74,72 @@ $('.getOSMData').on('click',function() {
 	// 	NElng: bbox._northEast.lng
 	// });
 
-	$.post('/getData/getOSMData',data,function(res){
-		console.log(res);
-		var osmFeatureLayer = L.geoJson(res);
-		osmFeatureLayer.addTo(map);	
-	});
+$.post('/getData/getOSMData',data,function(res){
+	// console.log(res);
+	// for (var key in p.features) {
+	// 	console.log(p.features[key].properties.tags);
+	// }
+	// 
+	// 
+
+	function jsonToTable(jsonObj){
+		console.log(jsonObj);
+		var table ='';
+		$.each(jsonObj, function(k,v){
+			var rows = "<tr><td>"+ k + "</td><td>" + v +"</td></tr>" ;
+			console.log(rows);
+			table += rows ; 
+			// table.concat(row);
+			
+		});
+		console.log(table);
+		return table
+		
+	};
+
+	function onEachFeature(feature, layer) {
+		if (feature.properties) {
+			layer.bindPopup("<table><th><tr></tr><td><b>Key</b></td><td><b>Value</b></td></th>" +jsonToTable(feature.properties.tags)+ "</table>");
+		}
+	};
+
+	function filterFeature(feature, layer){
+		if (feature.properties.tags.amenities === 'biergarten'){
+			return {
+
+			}
+		}
+		
+	};
+
+// 	var geojsonMarkerOptions = {
+//     radius: 8,
+//     fillColor: "#ff7800",
+//     color: "#000",
+//     weight: 1,
+//     opacity: 1,
+//     fillOpacity: 0.8
+// };
+
+var geojsonMarkerOptions = L.icon({
+    iconUrl: 'public/images/beer.svg',    
+    iconSize: [38, 95],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76]
+});
+
+
+	var geojsonFeature = res;
+
+	L.geoJson(geojsonFeature, {
+		onEachFeature: onEachFeature,
+		pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, geojsonMarkerOptions);
+    }
+	}).addTo(map);
+
+});
+
 });
 
 

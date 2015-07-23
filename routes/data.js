@@ -32,12 +32,15 @@ router.post('/getOSMData', function (req, res) {
 	};
 
 	/* query */
+	// key-value pairings
+	var keyValue = bbox.key+'='+bbox.value ;
 	var endpoint = 'http://overpass-api.de/api/interpreter?data=';
 	// Your query in compact Overpass QL:
 	// http://overpass-api.de/query_form.html
 	// converts OVPTurbo queries in compact URL-like format
 	// es: '[out:json][timeout:25];(node["amenity"="drinking_water"](50.7,7.1,50.8,7.2););out body;>;out skel qt;'
-	var queryOVP = '[out:json][timeout:25];(node['+bbox.key+'='+bbox.value+']('+createCoords(bbox)+'););out body;>;out skel qt;'
+	var queryOVP = '[out:json][timeout:25];(node['+keyValue+']('+createCoords(bbox)+');way['+keyValue+']('+createCoords(bbox)+');relation['+keyValue+']('+createCoords(bbox)+'););out body;>;out skel qt;'
+	// [out:json][timeout:25];(node["amenity"]();way["amenity"]();relation["amenity"](););out body;>;out skel qt;
 	// API url to be called
 	var queryTotal = endpoint + queryOVP
 	
@@ -48,6 +51,7 @@ router.post('/getOSMData', function (req, res) {
   		//another chunk of data has been recieved, so append it to `str`
   		// Continuously update stream with data
   		response.on('data', function (chunk) {
+  			console.log('Receiving something... ');
   			str += chunk;
   		});
 
@@ -59,13 +63,14 @@ router.post('/getOSMData', function (req, res) {
   			var osmData = osmtogeojson(parsed);
   			// ship it back to the client
   			res.send(osmData);
+  			console.log('wrote some data for ya, boss! ');
   		});
   	}
 
   	// launch the request
   	http.request(queryTotal, callback).end();
 
-  	console.log('wrote some data for ya, boss! ');
+  	
 
   });
 

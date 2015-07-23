@@ -20,3 +20,31 @@ a {
 .btn-group{
 	padding-left: 20px;
 }
+
+/*Popup table style*/
+tr:nth-child(even) {
+  background-color: rgb(193, 216, 223);
+}
+
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+table {
+	text-align: center;
+	font-size: 73%;
+}
+td{
+	padding: 5px;
+}
+
+span.label{
+	font-size: 95%;
+	color: #5A5A5A;
+}
+.input{
+	display: inline-block;
+}
+.actions{
+	padding-top: 10px;
+}
